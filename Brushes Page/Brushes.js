@@ -71,6 +71,7 @@ function addDetails(elem){
         name: elem.name,
         price: elem.price,
       };
+      // console.log(detailsObj);
       brushesArr.push(detailsObj);
       localStorage.setItem("brushesDetails", JSON.stringify(brushesArr));
 }
