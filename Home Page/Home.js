@@ -95,3 +95,5 @@ LeftBtn2.addEventListener("click",function(){
     }
     newLaunch.src=LaunchimagesLink[imageState2];
 });
+
+

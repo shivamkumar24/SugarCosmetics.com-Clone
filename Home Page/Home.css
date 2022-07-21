@@ -8,120 +8,15 @@ h1{
     font-weight: 300;
     margin-bottom: 20px;
 }
-#pop-up{
-    height: 32px;
-    position: sticky;
-    padding-top: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: aliceblue;
-    background-color: black;
-}
-#pop-up>h3{
-    font-weight: bold;
-    padding-left: 30%;
-}
-#pop-up>i{
-    padding-left: 20%;
-    cursor: pointer;
-    color: white;
-}
-
-/* navbar */
-#navbar{
-    position: sticky;
-}
-#navFirst{
-    margin: auto;
-    padding-right: 30px;
-    padding-top: 3px;
-    height: 100px;
-    background-color: rgb(248, 245, 245);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-#Logo{
-    width: 250px;
-    height: 100px;
-    cursor: pointer;
-}
-
-
-#search{
-    margin: auto;
-    text-align: center;
-}
-#search input{
-    box-sizing: border-box;
-    background-color:  #ffffff;
-    padding: 14px 35px;
-    color:#4E565C;
-    border: 1px solid grey;
-    border-top-left-radius: 22px;
-    border-bottom-left-radius: 22px;
-}
-#search button{
-    background-color:  black;
-    color: #ffffff;
-    font-weight: 700;
-    padding: 15px 22px;
-    margin-left: -4px;
-    cursor: pointer;
-    border: none;
-    border-top-right-radius: 22px;
-    border-bottom-right-radius: 22px;
-}
-#search i{
-    position: absolute;
-    top: 15px;
-    left: 20px;
-    font-size: 16px;
-    color: #80A3BD;
-}
-
-.icon>i{
-    margin: 8px;
-    cursor: pointer;
-}
-
-a{
-    font-size: 25px;
-    text-decoration: none;
-    color: black;
-}
-
-#navbarSecond{
-    height: 40px;
-    color: #4E565C;
-    padding-left: 50px;
-    background-color: azure;
-}
-.menu-items{
-    display: flex;
-}
-.menu-items>li{
-    list-style: none;
-    padding: 10px;
-}
-.menu-items>li>a{
-    font-size: 17px;
-    font-weight: bold;
-    margin: 0px 20px;
-    text-decoration: none;
-}
 
 /* corousel */
-.firstCorousel,.quickBeauty,.launch{
+.firstCorousel,.quickBeauty,.launch,.facePalette{
     width: 100vw;
     cursor: pointer;
     margin-bottom: 20px;
     position: relative;
 }
-.firstCorousel>img,.quickBeauty>img,.launch>img{
+.firstCorousel>img,.quickBeauty>img,.launch>img,.facePalette>img{
     width: 100%;
 }
 .firstCorousel>button,.quickBeauty>button,.launch>button{
@@ -163,7 +58,7 @@ a{
 /* FACE PALETTE video */
 .facePalette{
     width: 100vw;
-    height: 500px;
+    height: auto;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -179,71 +74,30 @@ a{
     cursor: pointer;
 }
 
-/* Footer */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .explore{
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+    .explore>img{
+        margin: 10px;
+    }
+}
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .explore{
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+    .explore>img{
+        width: 80vw;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
 
-#footer{
-    height: 400px;
-    padding: 0px 200px;
-    text-align: center;
-    background-color: black;
-}
-#footer>img{
-    width: 150px;
-    height: 150px;
-}
-#footer .fa {
-    padding: 2px;
-    font-size: 20px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-  }
-#footer .fa:hover {
-    opacity: 0.7;
-}
-.fa-facebook {
-    color: white;
-  }
-  
-  .fa-twitter {
-    color: white;
-  }
-  .fa-youtube {
-    color: white;
-  }
-  
-  .fa-instagram {
-    color: white;
-  }
-  
-  .fa-pinterest {
-    color: white;
-  }
-  .fa-tumblr {
-    color: white;
-  }
-  #footer .heading{
-    margin-top: 10px;
-   display: grid;
-   grid-template-columns: repeat(5,1fr);
-   justify-content: space-evenly;
-  }
-  #footer .heading>a{
-    color: #ffffff;
-    opacity: 0.7;
-  }
-  #footer .contact{
-    display: grid;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    color: #ffffff;
-    grid-template-columns: repeat(5,1fr);
-    justify-content: space-around;
-  }
-  #footer .contact>div{
-    display: block;
-  }
-  #footer .contact>div>p{
-    opacity: 0.5;
-  }

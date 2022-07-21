@@ -32,7 +32,7 @@ function Signup(event) {
     if (flag === true) {
       signupArr.push(signupObj);
       localStorage.setItem("signupList", JSON.stringify(signupArr));
-      alert("SignUp SuccessFully......");
+      alert("SignUp SuccessFully Now you can Signin......");
     } else {
       alert("Email Already Exists......");
     }

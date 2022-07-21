@@ -24,7 +24,7 @@ function Signin(event) {
     if (flag === true) {
       alert("SuccessFully SignIn.....");
       // window.location.href="index.html";
-      window.location.href = "Home.html";
+      window.location.href = "./Home Page/Home.html";
     } else {
       alert("Wrong details...");
     }
