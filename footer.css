@@ -103,6 +103,7 @@
     margin-bottom: 5px;
   }
   #footer .contact > div {
+    margin: 10px;
     display: block;
   }
   #footer .contact > div > p {
