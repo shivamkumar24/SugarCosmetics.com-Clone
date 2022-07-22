@@ -1,0 +1,103 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.head-image {
+  height: 270px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.head-image > img {
+  width: 100%;
+  height: 100%;
+}
+#container {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 25px;
+}
+#container > div {
+  height: 370px;
+  padding: 20px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* border: 1px solid red; */
+  background-color: white;
+}
+#container > div > img {
+  margin-bottom: 7px;
+  height: 70%;
+  cursor: pointer;
+}
+#container > div > h3 {
+  margin: 4px;
+  text-align: center;
+  font-weight: bold;
+  background-color: white;
+}
+#container > div > button {
+  width: 100%;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  #container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  #container > div {
+    height: 250px;
+  }
+  #container > div > img {
+    width: 70%;
+    height: 60%;
+  }
+  #container > div > h3 {
+    font-size: 15px;
+  }
+  #container > div > button {
+    width: 100%;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+  #container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+  }
+  #container > div {
+    height: 255px;
+  }
+  #container > div > img {
+    width: 70%;
+    height: 65%;
+  }
+  #container > div > h3 {
+    font-size: 15px;
+  }
+  #container > div > button {
+    width: 100%;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+  }
+}
