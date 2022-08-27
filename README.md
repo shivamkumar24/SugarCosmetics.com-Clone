@@ -4,7 +4,7 @@ Project Clone:- https://in.sugarcosmetics.com
 
 Student:- fw19_0161 - Shivam Kumar - shivamkumar24
 
-Manager:- Sheelu Kumar - sheeluofficial
+IA Manager:- Sheelu Kumar - sheeluofficial
 
 Skills: HTML, CSS, JS
 
