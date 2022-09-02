@@ -61,7 +61,7 @@ let makeupData = [
     },
 ];
 
-let makeupArr = JSON.parse(localStorage.getItem("makeupDetails")) || [];
+let cartArr = JSON.parse(localStorage.getItem("cartDetails")) || [];
 let output = makeupData.forEach(function (elem) {
     let box = document.createElement("div");
     let image = document.createElement("img");
@@ -86,9 +86,16 @@ function addDetails(elem) {
         name: elem.image_name,
         price: elem.price,
     };
-    makeupArr.push(makeupObj);
-    localStorage.setItem("makeupDetails", JSON.stringify(makeupArr));
+    cartArr.push(makeupObj);
+    localStorage.setItem("cartDetails", JSON.stringify(cartArr));
 }
 
 
 
+document.querySelector("#Logo").addEventListener("click", function () {
+    window.location.href = "../index.html";
+});
+
+document.querySelector("#cart").addEventListener("click", function () {
+    window.location.href = "../Cart Page/Cart.html";
+});

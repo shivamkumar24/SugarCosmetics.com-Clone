@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 40%;
+    padding: 10px 15px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+}
+form{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+}
+#heading{
+    margin: 10px;
+    text-align: center;
+}
+label{
+    font-size: 18px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+input{
+    font-size: 15px;
+    padding: 12px;
+    margin: 10px 2px;
+    margin-top: 3px;
+}
+#order{
+    font-size: 22px;
+}
+
+#Reg_email{
+    margin: 15px;
+    text-align: center;
+}

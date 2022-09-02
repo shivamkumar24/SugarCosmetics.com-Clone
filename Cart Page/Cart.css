@@ -5,22 +5,32 @@
 }
 body {
   background-color: bisque;
-  padding: 20px;
+  padding: 10px;
 }
 h1 {
   text-align: center;
   margin: 30px;
+  padding: 20px;
   font-size: 42px;
+  background-color: black;
+  color: aliceblue;
 }
 .details {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 30px;
 }
-h2 {
+.details>h2 {
   font-size: 30px;
-  margin-bottom: 8px;
+  padding: 5px 10px;
+  margin: 5px;
+  font-weight: bold;
+  color: aliceblue;
+  background-color:black;
+  border-radius: 10px;
 }
+
 #container {
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -56,6 +66,12 @@ button {
   color: white;
 }
 
+#shopping_continue{
+  font-size: 27px;
+  font-weight: bold;
+  background-color:black;
+  border-radius: 10px;
+}
 @media all and (min-width: 768px) and (max-width: 1024px) {
   #container {
     grid-template-columns: repeat(2, auto);

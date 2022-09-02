@@ -5,9 +5,9 @@ function del(event) {
 };
 
 document.querySelector("#Logo").addEventListener("click", function () {
-    window.location.href = "../Home Page/Home.html";
+    window.location.href = "index.html";
 });
 
 document.querySelector("#cart").addEventListener("click", function () {
-    window.location.href = "../Cart Page/Cart.html";
+    window.location.href = "Cart Page/Cart.html";
 });

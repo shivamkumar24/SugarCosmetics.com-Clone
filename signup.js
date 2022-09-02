@@ -33,6 +33,7 @@ function Signup(event) {
       signupArr.push(signupObj);
       localStorage.setItem("signupList", JSON.stringify(signupArr));
       alert("SignUp SuccessFully Now you can Signin......");
+      window.location.href="signin.html";
     } else {
       alert("Email Already Exists......");
     }

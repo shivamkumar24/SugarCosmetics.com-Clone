@@ -56,7 +56,7 @@ let trendingData = [
     },
 ];
 
-let trendingArr = JSON.parse(localStorage.getItem("trendingDetails")) || [];
+let cartArr = JSON.parse(localStorage.getItem("cartDetails")) || [];
 let output = trendingData.forEach(function (elem) {
     let box = document.createElement("div");
     let image = document.createElement("img");
@@ -81,6 +81,15 @@ function addDetails(elem) {
         price: elem.price,
     };
     // console.log(detailsObj);
-    trendingArr.push(detailsObj);
-    localStorage.setItem("trendingDetails", JSON.stringify(trendingArr));
+    cartArr.push(detailsObj);
+    localStorage.setItem("cartDetails", JSON.stringify(cartArr));
 }
+
+
+document.querySelector("#Logo").addEventListener("click", function () {
+    window.location.href = "../index.html";
+});
+
+document.querySelector("#cart").addEventListener("click", function () {
+    window.location.href = "../Cart Page/Cart.html";
+});

@@ -25,7 +25,7 @@ let offerData = [
     },
 ];
 
-let offerArr = JSON.parse(localStorage.getItem("offerDetails")) || [];
+// let offerArr = JSON.parse(localStorage.getItem("offerDetails")) || [];
 let output = offerData.forEach(function (elem) {
     let box = document.createElement("div");
     let image = document.createElement("img");
@@ -40,3 +40,14 @@ let output = offerData.forEach(function (elem) {
 function addDetails(elem) {
     window.location.href = "../Makeup Page/Makeup.html";
 }
+
+
+
+
+document.querySelector("#Logo").addEventListener("click", function () {
+    window.location.href = "../index.html";
+});
+
+document.querySelector("#cart").addEventListener("click", function () {
+    window.location.href = "../Cart Page/Cart.html";
+});

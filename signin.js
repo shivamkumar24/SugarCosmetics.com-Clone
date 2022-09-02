@@ -15,6 +15,7 @@ function Signin(event) {
     for (let i = 0; i < signupvalue.length; i++) {
       if (signupvalue[i].Email === SigninObj.email && signupvalue[i].Password === SigninObj.pass) {
         flag = true;
+        localStorage.setItem("emailData",JSON.stringify(SigninObj.email));
         break;
       } else {
         flag = false;
@@ -24,7 +25,7 @@ function Signin(event) {
     if (flag === true) {
       alert("SuccessFully SignIn.....");
       // window.location.href="index.html";
-      window.location.href = "./Home Page/Home.html";
+      window.location.href = "index.html";
     } else {
       alert("Wrong details...");
     }

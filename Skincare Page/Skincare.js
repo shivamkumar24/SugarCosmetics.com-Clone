@@ -56,7 +56,7 @@ let skincareData = [
     },
 ];
 
-let skincareArr = JSON.parse(localStorage.getItem("skincareDetails")) || [];
+let cartArr = JSON.parse(localStorage.getItem("cartDetails")) || [];
 let output = skincareData.forEach(function (elem) {
     let box = document.createElement("div");
     let image = document.createElement("img");
@@ -81,6 +81,15 @@ function addDetails(elem) {
         price: elem.price,
     };
     // console.log(detailsObj)
-    skincareArr.push(detailsObj);
-    localStorage.setItem("skincareDetails", JSON.stringify(skincareArr));
+    cartArr.push(detailsObj);
+    localStorage.setItem("cartDetails", JSON.stringify(cartArr));
 }
+
+
+document.querySelector("#Logo").addEventListener("click", function () {
+    window.location.href = "../index.html";
+});
+
+document.querySelector("#cart").addEventListener("click", function () {
+    window.location.href = "../Cart Page/Cart.html";
+});

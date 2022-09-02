@@ -97,17 +97,17 @@ LeftBtn2.addEventListener("click", function () {
 });
 
 document.querySelector("#Corousel").addEventListener("click", function () {
-    window.location.href = "../Trending Page/Trending.html";
+    window.location.href = "./Trending Page/Trending.html";
 });
 
 document.querySelector("#beauty").addEventListener("click", function () {
-    window.location.href = "../Skincare Page/Skincare.html";
+    window.location.href = "./Skincare Page/Skincare.html";
 });
 
 document.querySelector("#newLaunch").addEventListener("click", function () {
-    window.location.href = "../Trending Page/Trending.html";
+    window.location.href = "./Trending Page/Trending.html";
 });
 
 document.querySelector(".explore").addEventListener("click", function () {
-    window.location.href = "../Brushes Page/Brushes.html";
+    window.location.href = "./Brushes Page/Brushes.html";
 });
