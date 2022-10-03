@@ -10,4 +10,4 @@ IA Manager:- Sheelu Kumar - sheeluofficial
 
 Skills: HTML, CSS, JS
 
-About: This website is clone of https://in.sugarcosmetics.com that is created by me during the construct week of UNIT-02 of Masai Course. I have used HTML, CSS, JS, Local Storage for create this website building. 
+About: This website is clone of https://in.sugarcosmetics.com that is created by me during the construct week of UNIT-02 of Masai Course. I have used HTML, CSS, JS, Local Storage for create this website. 
